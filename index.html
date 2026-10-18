@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nyxheim — mod de dimensión para Minecraft 26.3</title>
+<meta name="description" content="Nyxheim: una dimensión enorme y oscura para Minecraft 26.3 (Fabric), con un portal dificilísimo, minerales, enemigos y un jefe.">
+<link rel="icon" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --void:#0d0a18; --panel:#16102a; --line:#2c2250; --violet:#7a3cf0; --magenta:#d83cf0; --lunar:#7fe3ff;
+  --text:#e9e4f7; --muted:#a79fc4;
+  --display:"Syne","Trebuchet MS",system-ui,sans-serif; --body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--void);color:var(--text);font:400 1.0625rem/1.65 var(--body);
+  background-image:radial-gradient(900px 500px at 78% -5%,rgba(122,60,240,.28),transparent 70%)}
+a{color:var(--lunar)}
+:focus-visible{outline:3px solid var(--lunar);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:center;padding:72px 0 56px}
+h1{font:800 clamp(3rem,8vw,5.6rem)/.95 var(--display);margin:0 0 20px;letter-spacing:-.02em}
+.lead{font-size:1.2rem;color:var(--muted);max-width:34em;margin:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--violet),var(--magenta));color:#fff;text-decoration:none;
+  font:700 1.1rem var(--body);padding:16px 30px;border-radius:10px;box-shadow:0 0 0 1px rgba(255,255,255,.12) inset,0 10px 34px rgba(122,60,240,.45);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 0 1px rgba(255,255,255,.2) inset,0 14px 40px rgba(216,60,240,.55)}
+.btn:active{transform:translateY(0)}
+.meta{color:var(--muted);font-size:.95rem}
+.icon{justify-self:center;position:relative}
+.icon img{display:block;width:min(100%,320px);height:auto;image-rendering:pixelated;border-radius:18px;border:2px solid var(--line);
+  box-shadow:0 0 70px rgba(216,60,240,.35);animation:rise 1.1s cubic-bezier(.2,.8,.2,1) both}
+@keyframes rise{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}
+section{padding:40px 0;border-top:1px solid var(--line)}
+h2{font:700 clamp(1.6rem,3.4vw,2.2rem)/1.15 var(--display);margin:0 0 20px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+ul.plain{list-style:none;margin:0;padding:0}
+ul.plain li{padding:11px 0;border-bottom:1px solid var(--line)}
+ul.plain strong{color:#fff}
+.frame{display:grid;grid-template-columns:repeat(6,1fr);gap:3px;max-width:300px;margin:0 auto 14px}
+.frame i{aspect-ratio:1;background:#1c1432;border:1px solid #3a2c68;border-radius:2px}
+.frame i.c{background:var(--magenta);border-color:#f3a0ff}
+.frame i.p{background:linear-gradient(135deg,#4a1fb0,#b04cf0);border-color:transparent}
+.frame-note{text-align:center;color:var(--muted);font-size:.95rem;margin:0}
+ol.steps{margin:0;padding-left:22px}
+ol.steps li{padding:6px 0}
+code{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:2px 7px;font-size:.92em;color:var(--lunar)}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;overflow-x:auto;margin:14px 0 0;font-size:.9rem;line-height:1.55}
+table{border-collapse:collapse;width:100%}
+td{padding:9px 0;border-bottom:1px solid var(--line);vertical-align:top}
+td:first-child{color:var(--muted);width:44%;padding-right:12px}
+.warn{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--magenta);border-radius:8px;padding:16px 20px;margin-top:8px}
+footer{padding:32px 0 56px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media (max-width:760px){.hero,.cols{grid-template-columns:1fr}.hero{padding-top:40px;gap:32px}.icon{order:-1}.icon img{width:200px}}
+@media (prefers-reduced-motion:reduce){.icon img{animation:none}.btn{transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <div>
+      <h1>Nyxheim</h1>
+      <p class="lead">Una dimensión enorme y oscura para Minecraft 26.3. Para entrar tenés que construir un portal carísimo; del otro lado te esperan minerales nuevos, enemigos, estructuras y un jefe.</p>
+      <div class="cta">
+        <a class="btn" href="nyxheim-mod-26.3.zip" download>Descargar el mod (v0.1.0)</a>
+        <span class="meta">Minecraft 26.3 · Fabric · archivo .zip</span>
+      </div>
+    </div>
+    <div class="icon"><img src="data:image/png;base64,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" width="288" height="288" alt="Ícono de Nyxheim: un portal violeta dentro de un marco de obsidiana rúnica con esquinas magenta"></div>
+  </header>
+
+  <section>
+    <h2>Qué trae</h2>
+    <div class="cols">
+      <ul class="plain">
+        <li><strong>Dimensión gigante.</strong> Terreno amplificado para explorar horas, con piedra, pasto, árboles y hojas propios.</li>
+        <li><strong>Minerales nuevos.</strong> Voidita y lunarita, con lingotes, bloques, espada y pico de voidita.</li>
+        <li><strong>3 enemigos.</strong> Espectro de Nyx, Bruto de cristal y el Coloso de Nyx, el jefe.</li>
+        <li><strong>Estructuras.</strong> Obeliscos, Criptas subterráneas con spawner y Anillos Antiguos, todos con cofres.</li>
+      </ul>
+      <div>
+        <div class="frame" role="img" aria-label="Diagrama del marco del portal: 6 bloques de ancho por 7 de alto, esquinas de Núcleo de Nyx, bordes de Obsidiana Rúnica, interior de 4 por 5 vacío">
+          <i class="c"></i><i></i><i></i><i></i><i></i><i class="c"></i>
+          <i></i><i class="p"></i><i class="p"></i><i class="p"></i><i class="p"></i><i></i>
+          <i></i><i class="p"></i><i class="p"></i><i class="p"></i><i class="p"></i><i></i>
+          <i></i><i class="p"></i><i class="p"></i><i class="p"></i><i class="p"></i><i></i>
+          <i></i><i class="p"></i><i class="p"></i><i class="p"></i><i class="p"></i><i></i>
+          <i></i><i class="p"></i><i class="p"></i><i class="p"></i><i class="p"></i><i></i>
+          <i class="c"></i><i></i><i></i><i></i><i></i><i class="c"></i>
+        </div>
+        <p class="frame-note">El portal: 4 Núcleos de Nyx en las esquinas, Obsidiana Rúnica en el resto y el Ojo de Nyx para encenderlo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Cómo entrar a Nyxheim</h2>
+    <ol class="steps">
+      <li>Fabricá 18 bloques de <strong>Obsidiana Rúnica</strong> y 4 <strong>Núcleos de Nyx</strong>.</li>
+      <li>Armá el marco vertical de 6×7, con el interior de 4×5 vacío.</li>
+      <li>Hacé el <strong>Ojo de Nyx</strong>: estrella del Nether, aliento de dragón, corazón del mar, fragmento de eco y lingote de netherita.</li>
+      <li>Hacé clic derecho con el Ojo sobre el marco y quedate dentro del portal unos 4 segundos.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Instalación</h2>
+    <div class="cols">
+      <table>
+        <tr><td>Minecraft</td><td>26.3</td></tr>
+        <tr><td>Fabric Loader</td><td>0.19.5 o más nuevo</td></tr>
+        <tr><td>Fabric API</td><td>0.162.0+26.3</td></tr>
+        <tr><td>Java</td><td>25</td></tr>
+      </table>
+      <div>
+        <p style="margin-top:0">El .zip es el <strong>proyecto del mod</strong> (código fuente). Para generar el <code>.jar</code>, descomprimilo y compilalo:</p>
+        <pre>cd nyxheim
+./gradlew build
+# el .jar queda en build/libs/</pre>
+        <p>Copiá ese <code>.jar</code> a la carpeta <code>mods</code> junto con Fabric API.</p>
+      </div>
+    </div>
+    <div class="warn">Es la versión 0.1.0 y puede tener errores. Si algo falla al compilar o al jugar, avisá con el mensaje de error.</div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">Nyxheim no es un producto oficial de Minecraft ni está asociado a Mojang.</div>
+</footer>
+</body>
+</html>
